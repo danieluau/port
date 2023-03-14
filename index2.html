@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landpage</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-d"></i>
+                    <div class="logo-text">Daniel Leal</div>
+
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class= "navlinks">
+                        <li><a href="index2.html">Inicio</a></li>
+                        <li><a href="navegacao/sobre.html">Sobre</a></li>
+                        <li><a href="navegacao/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="imgs/IMG_20220604_172005_753.jpg" alt="profilepicture">        
+                </div>
+                <div class="hero-text">
+                    <h3>Olá, sou <span class="input">Dev Web</span></h3>
+                    <h5>Daniel Leal</h5>
+                    <p> Atualmente cursando Análise e Desenvolvimento de Sistemas no IFPI.</p>
+                    <div class="btn-group">
+                        <a href="navegacao/Curriculum.pdf" class="btn active">Curriculo</a>
+                        <a href="navegacao/contato.html" class="btn">Contato</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/danieluau" target="_blank" rel="external"> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/danieluau/" target="_blank" rel="external"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100006968622392" target="_blank" rel="external"> <i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        toggle.btn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+    </script>
+</body>
+</html>
